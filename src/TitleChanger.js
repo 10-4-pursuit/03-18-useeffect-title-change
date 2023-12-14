@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from 'react';
 
 function TitleChanger() {
-    const [name, setName] = React.useState('');
+    const [name, setName] = useState('');
     
-    React.useEffect(() => {
+    useEffect(() => {
         document.title = 'Hello ' + name;
     }, [name]);
 
