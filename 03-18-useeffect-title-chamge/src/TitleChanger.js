@@ -5,8 +5,7 @@ const TitleChanger = () => {
 
     useEffect(() => {
         document.title = `Hello, ${name || 'Stranger'}`;
-    },[name]);
-
+    }, [name]);
     return (
         <div>
             <label htmlFor="nameInput">Name:</label>
